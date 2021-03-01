@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="./style.css">
+	<script type="text/javascript" src="./meteo.js"></script>
+
+	<meta charset="UTF-8" />
+	<title>TP Météo HTML </title>
+
+
+
+
+	<select onchange=showCity() name="ville" id="ville-selectionne">
+		<option value="">--Please choose an option--</option>
+		<option value="Lyon">Lyon</option>
+		<option value="Oran">Oran</option>
+		<option value="Paris">Paris</option>
+	</select>
+	<style>
+
+#img01{
+	position:relative;
+                bottom:49px;
+                
+                left:50px;
+}
+
+#img02{
+	position:relative;
+	bottom:49px;
+                
+                left:50px;            
+}
+#img03{
+	position:relative;
+	bottom:57px;
+                
+                left:50px;
+                
+               
+}
+
+#head{
+	background-color: rgb(89, 107, 119);
+	color:white;
+	padding-top: 30px;
+		padding-left: 30px;
+		padding-bottom: 30px;
+	
+	font-family: Helvetica;
+	font-size: 150%;
+	text-align: center;
+	border: solid 5px  rgb(255, 255, 255);
+	
+}
+
+.all{
+
+	
+		display: flex;
+		flex: 1 1 auto;
+		flex-direction: row;
+    	flex-wrap: wrap;
+    	justify-content: space-around 10px;
+
+
+}
+
+.all div {
+	
+	background:rgb(197, 213, 228);
+	font-family: Helvetica,sans-serif;
+	padding-top: 10px;
+		padding-left: 10px;
+		padding-right:200px;
+		padding-bottom: 10px;
+		border: solid 10px  rgb(255, 255, 255);
+	    flex-grow: 1;
+	
+
+
+}
+/*.all div:nth-child(1){
+	
+	width: 400px;
+
+}
+.all div:nth-child(2){
+	
+	width: 400px;
+}
+.all div:nth-child(3){
+	
+	width: 400px;
+
+}*/
+
+
+.foot{
+background-color: rgb(155, 155, 148);
+font-family: Helvetica;
+padding-bottom: 10px;
+		padding-top: 10px;
+		padding-left: 10px;
+		border: solid 5px  rgb(255, 255, 255);
+}
+
+	</style>
+</head>
+
+<body>
+
+	<h1 id="head">
+		TP méteo HTML
+	</h1>
+	<div class=" all">
+		<div class="city" id="Lyon">
+			<h2>Lyon</h2>
+			12°C, Cloudy <br>
+			<img id="img01" src="noun_cloudy.png" alt="nuageux" width="200">
+
+		</div>
+
+		<div class="city" id="Oran">
+			<h2>Oran</h2>
+			7°C, Rainy <br>
+			<img id="img02" src="noun_rainy.png" alt="la pluie" width="200">
+		</div>
+
+		<div class="city" id="Paris">
+			<h2>Paris</h2>
+
+			<p>2°C, snowing <br>
+
+				<img id="img03" src="noun_snowing.png" alt="il neige" width="200">
+			</p>
+		</div>
+	</div>
+
+	<div class="foot">
+		<footer>
+			
+
+			Abdessamad BACIR RAHO <br>
+			icone météo par
+			<a href="https://thenounproject.com/search/collection/?q=weather">thenounproject</a>
+		</footer>
+
+	</div>
+
+</body>
+
+</html>
